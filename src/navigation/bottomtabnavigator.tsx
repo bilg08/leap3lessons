@@ -1,6 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {ImagePicker, Notification} from '../screens';
+import {ImagePicker, Notification, Contacts} from '../screens';
 
 function BottomTabNavigator() {
   const Tab = createBottomTabNavigator();
@@ -8,6 +8,7 @@ function BottomTabNavigator() {
     <Tab.Navigator screenOptions={{headerShown: false}}>
       <Tab.Screen name="ImagePicker" component={ImagePicker} />
       <Tab.Screen name="Notification" component={Notification} />
+      <Tab.Screen name="Contacts" component={Contacts} />
     </Tab.Navigator>
   );
 }
